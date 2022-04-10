@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="dashboard.css" />
+	</head>
+	<body>
+		<aside>
+			<div>&#10023;</div>
+			<h1>StarLink</h1>
+			<p>Version 1.0.0</p>
+			<p>A place to store, manage and organize all your links</p>
+		</aside>
+		<main>
+			<div class="header">
+				<div>
+					<div class="back">&#10151;</div>
+					<h1 class="current_dir">home</h1>
+				</div>
+				<form id="newfolder">
+					create new folder
+					<input type="text" name="folder_name" autocomplete="off" />
+					<span class="error"></span>
+					<button type="submit">Add</button>
+				</form>
+			</div>
+
+			<div class="main">
+				<div class="folder">
+					<img src="folder.png" alt="" />
+					<span>test </span>
+					<span>&#x2715;</span>
+				</div>
+			</div>
+		</main>
+		<script src="dashboard.js"></script>
+	</body>
+</html>

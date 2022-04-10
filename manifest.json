@@ -1,0 +1,29 @@
+{
+	"name": "starlink",
+	"version": "1.0",
+	"description": "a place to store all your links",
+
+	"icons": {
+		"128": "icons/icon.png"
+	},
+
+	"action": {
+		"default_popup": "popup/popup.html"
+	},
+
+	"content_scripts": [
+		{
+			"js": ["content/script.js"],
+			"matches": ["<all_urls>"]
+		}
+	],
+
+	"web_accessible_resources": [
+		{
+			"resources": ["dashboard/*"],
+			"matches": ["<all_urls>"]
+		}
+	],
+	"permissions": ["storage", "activeTab"],
+	"manifest_version": 3
+}
